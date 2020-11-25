@@ -1,0 +1,54 @@
+.modal-form__user-name {
+    display: flex;
+    position: relative;
+    margin-top: 4px;
+}
+
+.modal-form__name-icon {
+    display: flex;
+    position: absolute;
+    margin-left: 12px;
+    bottom: 0;
+    left: 0;
+    transform: translate(50%, -100%);
+}
+
+.modal-form__tel-icon {
+    display: flex;
+    position: absolute;
+    margin-left: 12px;
+    bottom: 0;
+    left: 0;
+    transform: translate(50%, -100%);
+}
+
+.modal-form__email-icon {
+    display: flex;
+    position: absolute;
+    margin-left: 12px;
+    bottom: 0;
+    left: 0;
+    transform: translate(50%, -100%);
+}
+
+.form-input:hover,
+.form-input:focus {
+    outline: var(--background-button);
+    border: 1px solid var(--background-button);
+}
+
+
+.form-input:hover+svg,
+.form-input:focus+svg {
+    fill: var(--background-button);
+}
+
+.form-textarea {
+    resize: none;
+    min-height: 120px;
+    padding: 12px 16px;
+}
+
+.form-textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}

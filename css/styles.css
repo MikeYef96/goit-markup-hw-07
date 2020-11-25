@@ -1006,8 +1006,12 @@ body {
     left: 0;
     bottom: -32px;
     width: 100%;
-    border-bottom: 4px solid var(--background-button);
+    height: 4px;
+
+    background: var(--background-button);
     border-radius: 2px;
+
+    transform: scaleX(0);
 }
 
 .filters_projects {

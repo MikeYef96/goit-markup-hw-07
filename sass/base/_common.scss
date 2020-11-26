@@ -1,10 +1,8 @@
-:root {
-    --background-button: #2196F3;
-    --title-color: #212121;
-    --text-color: #757575;
-    --background-hero-footer: #2F303A;
-    --bg-portfolio-filter: #F5F4FA;
-    --text-social-items: #AFB1B8;
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
 }
 
 h1,
@@ -19,8 +17,6 @@ p {
 }
 
 ul {
-    padding: 0;
-    margin: 0;
     list-style: none;
 }
 
@@ -30,4 +26,14 @@ button {
 
 body {
     font-family: Roboto, sans-serif;
+}
+
+.main-section__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: $title-color;
+    margin-bottom: 50px;
 }

@@ -23,12 +23,12 @@
 .close-button:hover,
 .close-button:focus {
     cursor: pointer;
-    fill: var(--background-button);
+    fill: $background-button;
 }
 
 .close-button:hover svg,
 .close-button:focus svg {
-    fill: var(--background-button);
+    fill: $background-button;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }

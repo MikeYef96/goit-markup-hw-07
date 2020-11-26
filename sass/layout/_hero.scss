@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: var(--background-hero-footer);
+    background-color: $background-hero-footer;
 }
 
 .hero-title {
@@ -31,7 +31,7 @@
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
-    background: var(--background-button);
+    background: $background-button;
     border: 0;
     cursor: pointer;
 }

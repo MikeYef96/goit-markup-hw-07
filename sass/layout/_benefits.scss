@@ -22,7 +22,7 @@
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
-    background-color: var(--bg-portfolio-filter);
+    background-color: $bg-portfolio-filter;
 }
 
 .benefits-bg_icons {
@@ -36,7 +36,7 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--title-color);
+    color: $title-color;
 }
 
 .benefits-section_info {
@@ -46,5 +46,5 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
-    color: var(--text-color);
+    color: $text-color;
 }

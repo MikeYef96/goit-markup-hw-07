@@ -1,5 +1,5 @@
 .footer {
-    background: var(--background-hero-footer);
+    background: $background-hero-footer;
     letter-spacing: 0.03em;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -28,7 +28,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
-    color: var(--text-color);
+    color: $text-color;
     width: fit-content;
 }
 
@@ -98,7 +98,7 @@
 
 .footer-list__link:hover,
 .footer-list__link:focus {
-    background-color: var(--background-button);
+    background-color: $background-button;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
@@ -150,7 +150,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background-color: var(--background-hero-footer);
+    background-color: $background-hero-footer;
     color: rgba(255, 255, 255, 0.9);
 }
 

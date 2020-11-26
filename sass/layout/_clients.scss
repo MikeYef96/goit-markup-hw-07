@@ -22,19 +22,19 @@
 }
 
 .clients-list__icon {
-    fill: var(--text-social-items);
+    fill: $text-social-items;
 }
 
 .clients-list__link:hover,
 .clients-list__link:focus {
-    border-color: var(--background-button);
+    border-color: $bg-portfolio-filter;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
 
 .clients-list__link:hover svg,
 .clients-list__link:focus svg {
-    fill: var(--background-button);
+    fill: $bg-portfolio-filter;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }

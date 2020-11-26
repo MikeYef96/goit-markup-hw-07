@@ -43,7 +43,7 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 1.7;
-    color: var(--title-color);
+    color: $title-color;
     letter-spacing: 0.06em;
 }
 
@@ -52,7 +52,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 1.87;
-    color: var(--text-color);
+    color: $text-color;
     letter-spacing: 0.03em;
     text-decoration: none;
 }

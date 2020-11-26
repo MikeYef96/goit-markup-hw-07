@@ -5,7 +5,7 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-color);
+    color: $title-color;
 }
 
 .js-speaker-form__container {
@@ -23,7 +23,7 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 1.166;
-    color: var(--text-color);
+    color: $text-color;
 }
 
 .form-input {

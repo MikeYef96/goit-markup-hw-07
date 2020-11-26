@@ -6,14 +6,14 @@
 .portfolio-list {
     display: flex;
     justify-content: center;
-}
 
-.portfolio-list .item+.item {
-    margin-left: 30px
-}
+    & .item {
+        position: relative;
+    }
 
-.portfolio-list .item {
-    position: relative;
+    & .item+.item {
+        margin-left: 30px
+    }
 }
 
 .portfolio-list__container {

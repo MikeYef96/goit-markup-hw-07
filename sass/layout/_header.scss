@@ -60,22 +60,29 @@
     color: $title-color;
     text-decoration: none;
     letter-spacing: 0.02em;
+
+    transition: color 250ms $cubic-function;
+
+    &:hover,
+    &:focus {
+        color: $background-button;
+    }
 }
 
 .studio-link {
     color: $background-button;
-}
 
-.studio-link::after {
-    content: '';
-    display: block;
+    &::after {
+        content: '';
+        display: block;
 
-    position: absolute;
-    left: 0;
-    bottom: -32px;
-    width: 100%;
-    border-bottom: 4px solid $background-button;
-    border-radius: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -32px;
+        width: 100%;
+        border-bottom: 4px solid $background-button;
+        border-radius: 2px;
+    }
 }
 
 .header-link__border::after {
@@ -94,19 +101,14 @@
     transform: scaleX(0);
 }
 
-.header-link:hover,
-.header-link:focus {
-    color: $background-button;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-}
-
-.header-link__border:hover::after,
-.header-link__border:focus::after {
-    color: $background-button;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    transform: scaleX(1);
+.header-link__border:hover,
+.header-link__border:focus {
+    &::after {
+        color: $background-button;
+        transition-timing-function: $cubic-function;
+        transition-duration: 250ms;
+        transform: scaleX(1);
+    }
 }
 
 /*NAVIGATION END==============================================*/
@@ -116,23 +118,22 @@
     display: flex;
     margin-left: auto;
     padding-right: 15px;
-}
 
-.contacts-list .item+.item {
-    margin-left: 50px;
+    & .item+.item {
+        margin-left: 50px;
+    }
 }
 
 .contacts-link {
     padding: 0;
     border: none;
     fill: $text-color;
-}
 
-.contacts-link:hover,
-.contacts-link:focus {
-    fill: $background-button;
-    cursor: pointer;
-
+    &:hover,
+    &:focus {
+        fill: $background-button;
+        cursor: pointer;
+    }
 }
 
 .button:hover svg,
@@ -161,9 +162,9 @@
     text-decoration: none;
     line-height: 0;
     letter-spacing: 0.02em;
-}
 
-.emeil-mobile:hover,
-.emeil-mobile:focus {
-    color: $background-button;
+    &:hover,
+    &:focus {
+        color: $background-button;
+    }
 }

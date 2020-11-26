@@ -12,23 +12,22 @@
     border-radius: 50%;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        fill: $background-button;
+    }
 }
 
 .modal-icon-cross {
     width: 11px;
     height: 11px;
     fill: #000000;
-}
+    transition: fill 250ms $cubic-function;
 
-.close-button:hover,
-.close-button:focus {
-    cursor: pointer;
-    fill: $background-button;
-}
-
-.close-button:hover svg,
-.close-button:focus svg {
-    fill: $background-button;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    .close-button:hover &,
+    .close-button:focus & {
+        fill: $background-button;
+    }
 }

@@ -1,17 +1,17 @@
 .portfolio-link {
     color: $background-button;
-}
 
-.portfolio-link::after {
-    content: '';
-    display: block;
+    &::after {
+        content: '';
+        display: block;
 
-    position: absolute;
-    left: 0;
-    bottom: -32px;
-    width: 100%;
-    border-bottom: 4px solid $background-button;
-    border-radius: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -32px;
+        width: 100%;
+        border-bottom: 4px solid $background-button;
+        border-radius: 2px;
+    }
 }
 
 .filters_projects {
@@ -34,20 +34,14 @@
     display: flex;
     justify-content: center;
     margin-bottom: 34px;
-}
 
-.filters-list .item+.item {
-    margin-left: 8px;
-}
+    & .item {
+        align-items: center;
+    }
 
-.filters-list .item {
-    align-items: center;
-}
-
-.filters-list_item {
-    padding: 0;
-    border: none;
-    background: none;
+    & .item+.item {
+        margin-left: 8px;
+    }
 }
 
 .filters-list_item {
@@ -64,13 +58,12 @@
     color: $title-color;
     letter-spacing: 0.03em;
     cursor: pointer;
-}
+    transition: background-color 250ms $cubic-function;
 
-.filters-list_item:hover,
-.filters-list_item:focus {
-    background: $background-button;
-    color: #FFFFFF;
-    border-radius: 4px;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    &:hover,
+    &:focus {
+        background-color: $background-button;
+        color: #FFFFFF;
+        border-radius: 4px;
+    }
 }

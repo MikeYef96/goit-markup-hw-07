@@ -2,15 +2,15 @@
     letter-spacing: 0.03em;
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.benefits-section_list {
-    display: flex;
-    justify-content: center;
-}
+    & .benefits-section_list {
+        display: flex;
+        justify-content: center;
 
-.benefits-section_list .list-item+.list-item {
-    margin-left: 30px;
+        & .list-item+.list-item {
+            margin-left: 30px;
+        }
+    }
 }
 
 .benefits-bg {
@@ -23,11 +23,11 @@
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: $bg-portfolio-filter;
-}
 
-.benefits-bg_icons {
-    width: 70px;
-    height: 70px;
+    & .benefits-bg_icons {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 .benefits-section_title {

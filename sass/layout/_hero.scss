@@ -31,14 +31,13 @@
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
-    background: $background-button;
+    background-color: $background-button;
     border: 0;
-    cursor: pointer;
-}
+    transition: background-color 250ms $cubic-function;
 
-.hero-button:hover,
-.hero-button:focus {
-    background: #0569bb;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    &:hover,
+    &:focus {
+        background-color: #0569bb;
+        cursor: pointer;
+    }
 }
